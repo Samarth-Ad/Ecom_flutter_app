@@ -1,6 +1,6 @@
 import 'package:ecom_app/common/styles/spacing_styles.dart';
-import 'package:ecom_app/features/authentication/screens/Login/widgets/TSocailButtons.dart';
-import 'package:ecom_app/features/authentication/screens/Login/widgets/formDivider.dart';
+import 'package:ecom_app/common/widgets/Auth_widgets/login_signup/TSocailButtons.dart';
+import 'package:ecom_app/common/widgets/Auth_widgets/login_signup/formDivider.dart';
 import 'package:ecom_app/features/authentication/screens/Login/widgets/loginForm.dart';
 import 'package:ecom_app/features/authentication/screens/Login/widgets/loginHeader.dart';
 import 'package:ecom_app/utils/constants/texts_string.dart';
@@ -31,8 +31,9 @@ class LoginScreen extends StatelessWidget {
               LoginForm(),
 
               // Divider
-              FormDivider(dark: dark),
-              const SizedBox(width: TSizes.spaceBetween_sections,),
+              FormDivider(dividerText: TTexts.orSignInWith.capitalize!),
+
+              const SizedBox(height: TSizes.spaceBetween_items,),
               //footer
               TSocialButtons(),
             ],

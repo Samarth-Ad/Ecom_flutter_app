@@ -3,6 +3,8 @@ import 'package:ecom_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'features/authentication/screens/sign up/sign_up.dart';
+
 
 
 class MyApp extends StatefulWidget {
@@ -22,6 +24,7 @@ class _MyAppState extends State<MyApp> {
       darkTheme: TAppTheme.darkTheme,
       title: "Test App" ,
       home: OnBoardingScreen(),
+      // home: SignUp_page(),
     );
   }
 }

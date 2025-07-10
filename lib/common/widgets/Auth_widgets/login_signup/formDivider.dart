@@ -1,21 +1,23 @@
+import 'package:ecom_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/image_strings.dart';
-import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/constants/texts_string.dart';
+import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/image_strings.dart';
+import '../../../../utils/constants/sizes.dart';
+import '../../../../utils/constants/texts_string.dart';
 
 class FormDivider extends StatelessWidget {
   const FormDivider({
     super.key,
-    required this.dark,
+    required this.dividerText,
   });
 
-  final bool dark;
+  final String dividerText ;
 
   @override
   Widget build(BuildContext context) {
+  final dark = THelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [

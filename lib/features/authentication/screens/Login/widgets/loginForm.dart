@@ -1,11 +1,13 @@
+import 'package:ecom_app/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ecom_app/features/authentication/screens/sign%20up/sign_up.dart';
 import 'package:flutter/material.dart';
-
+import '../../../../../navigation_menu..dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/image_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/texts_string.dart';
 import 'package:get/get.dart';
+
 class LoginForm extends StatelessWidget {
   const LoginForm({
     super.key,
@@ -50,7 +52,7 @@ class LoginForm extends StatelessWidget {
                 ),
                 // forget password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: ()=> Get.to(() => const forget_password()),
                   child: const Text(TTexts.forgetPassword),
                 ),
               ],
@@ -61,7 +63,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(()=> Navigation_Menu()),
                 child: Text(TTexts.signIn),
               ),
             ),

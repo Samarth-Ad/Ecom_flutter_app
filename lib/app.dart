@@ -2,11 +2,7 @@ import 'package:ecom_app/features/authentication/screens/onboarding/onboarding.d
 import 'package:ecom_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'features/authentication/screens/sign up/sign_up.dart';
-
-
-
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
